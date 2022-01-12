@@ -6,6 +6,5 @@ y_train <- read.csv("..\\UCI HAR Dataset\\train\\Y_train.txt")
 
 
 
-
 ### write output
 write.table(result_df, row.name=FALSE)
