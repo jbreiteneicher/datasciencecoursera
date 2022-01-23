@@ -40,7 +40,7 @@ names(subject_data) <- "subject"
 # bind all the data in a single data set
 all_data <- cbind(x_data, y_data, subject_data)
 
-## Step 5
+## Step 5 
 result_df <- ddply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 ### write output
