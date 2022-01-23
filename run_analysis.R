@@ -27,7 +27,7 @@ activities <- read.table("..\\UCI HAR Dataset\\activity_labels.txt")
 
 
 ## Step 5
-result_df <- ddply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
+result_df <- saply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 ### write output
 write.table(result_df, file="JB_result.txt", row.name=FALSE)
