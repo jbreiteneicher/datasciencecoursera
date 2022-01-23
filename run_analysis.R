@@ -27,7 +27,6 @@ activities <- read.table("..\\UCI HAR Dataset\\activity_labels.txt")
 y_data[, 1] <- activities[y_data[, 1], 2]
 names(y_data) <- "activity"
 
-
 # correct column name
 names(y_data) <- "activity"
 
