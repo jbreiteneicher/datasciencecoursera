@@ -29,3 +29,13 @@ The result is written as a tidy table into file JB_results.txt
 4.  Appropriately labels the data set with descriptive variable names.
 
 5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+### Variables
+
+`[x,y,subject] _[train,test]` are read as table from the input files
+
+`[x,y,subject] _data` are the combined data sets (rbind)
+
+`all_data` is the combined dataset
+
+`result_df` is the final tidy data set with the means
